@@ -18,6 +18,10 @@ public class ApplicationConfig extends WebMvcConfigurationSupport {
     @Autowired
     private JwtFilter jwtFilter;
 
+    /**
+     * 配置过滤的url
+     * @param registry
+     */
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtFilter).addPathPatterns("/**").excludePathPatterns("/**/login");

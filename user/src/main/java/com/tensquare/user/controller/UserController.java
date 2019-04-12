@@ -54,9 +54,8 @@ public class UserController {
     }
 
     /**
-     * 根据ID查询
-     *
-     * @param id ID
+     * 根据id值查询
+     * @param id
      * @return
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

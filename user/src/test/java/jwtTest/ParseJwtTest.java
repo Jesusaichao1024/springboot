@@ -2,6 +2,7 @@ package jwtTest;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import org.junit.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,5 +26,15 @@ public class ParseJwtTest {
         System.out.println("签发时间:  " + format.format(claims.getIssuedAt()));
         System.out.println("过期时间:  " + format.format(claims.getExpiration()));
         System.out.println("当前时间 = " + format.format(new Date()));
+    }
+
+    @Test
+    public void test() {
+        String dd = "/dfsdfsdkfjskldjfklsdjfklsd/asjdklasjdkl";
+        String[] s = dd.split("/");
+        for (String s1 : s) {
+            System.out.println("s1 = " + s1);
+        }
+        System.out.println("s = /" + s[1]+"/"+s[2]);
     }
 }

@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Table(name = "tb_label")
 public class Label implements Serializable {
     /**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
